@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>名古屋・冬之旅</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts（手寫標題用） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+    <!-- Taipei Sans TC Beta 台北黑體 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/taipei-sans-tc@latest/dist/stylesheet.css">
+
+    <style>
+        :root {
+            --bg-paper: #f9f7f2;
+            --primary: #769a9e;
+            --secondary: #e6a496;
+            --accent: #dca856;
+            --text-main: #4a4a4a;
+            --text-light: #7a7a7a;
+        }
+
+        /* 全站預設字體：台北黑體 */
+        body {
+            font-family:
+                "Taipei Sans TC Beta",
+                -apple-system,
+                BlinkMacSystemFont,
+                "Noto Sans TC",
+                "PingFang TC",
+                "Microsoft JhengHei",
+                sans-serif;
+            background-color: var(--bg-paper);
+            color: var(--text-main);
+            letter-spacing: 0.02em;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        /* 手寫感標題 */
+        h1, h2, h3, .handwriting {
+            font-family: 'Yomogi', cursive;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .watercolor-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(4px);
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+            box-shadow: 2px 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .btn-water {
+            border-radius: 25px 255px 25px 255px / 255px 25px 255px 25px;
+            transition: all .3s ease;
+            box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+        }
+
+        .timeline-line::before {
+            content:'';
+            position:absolute;
+            top:0; bottom:0;
+            left:14px;
+            width:2px;
+            background:#e0e0e0;
+        }
+
+        .nav-item.active {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .custom-checkbox:checked + label {
+            text-decoration: line-through;
+            color:#aaa;
+            opacity:.7;
+        }
+
+        .tab-content { display:none; animation:fadeIn .4s ease-out; }
+        .tab-content.active { display:block; }
+
+        @keyframes fadeIn {
+            from { opacity:0; transform:translateY(10px); }
+            to { opacity:1; transform:none; }
+        }
+
+        .memo-link {
+            display:inline-block;
+            margin:4px;
+            padding:4px 12px;
+            background:var(--secondary);
+            color:#fff;
+            border-radius:20px;
+            font-size:.85rem;
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body class="pb-24">
+
+<!-- 你原本的 HTML 結構與 JS 都可以「原封不動」接在這裡 -->
+<!-- 👉 字型已全站套用完成 -->
+
+</body>
+</html>
